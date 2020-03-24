@@ -1,0 +1,16 @@
+﻿create table Addmember(
+memberId int identity(1,1) primary key,
+memberName varchar(50) ,
+fatherName varchar(50),
+CNIC  varchar(100),
+streetAddress varchar(100),
+province varchar(50),
+division varchar(50),
+district varchar(50),
+city varchar(50),
+tehsil varchar(50),
+unionCouncil varchar(50),
+mailingAddress varchar(50),
+mobileNumbar varchar(50),
+emailAddress varchar(50),
+photo varchar(50) )

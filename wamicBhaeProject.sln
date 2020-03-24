@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wamicBhaeProject", "wamicBhaeProject\wamicBhaeProject.csproj", "{29C64213-98D6-45D4-B83B-CB4B38A2A8EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29C64213-98D6-45D4-B83B-CB4B38A2A8EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C64213-98D6-45D4-B83B-CB4B38A2A8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C64213-98D6-45D4-B83B-CB4B38A2A8EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C64213-98D6-45D4-B83B-CB4B38A2A8EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49DDF2E4-E308-4394-9EBA-418631FCBF59}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,137 @@
+﻿@model IEnumerable<wamicBhaeProject.Models.addMemberClass>
+@*@model IEnumerable<demo_student.Models.StudentModel>*@
+
+@{
+    Layout = null;
+}
+
+
+
+<div class="panel panel-default">
+
+    <div class="panel-heading main-color-bg">
+
+        <h3 class="panel-title">Member Index</h3>
+
+    </div>
+
+    <div class="panel-body">
+
+        @*<table class="table table-stripped table-hover">
+
+                <tr>
+
+                    <th></th>
+
+                    <th>Name</th>
+
+                    <th>Joined</th>
+
+                    <th>Phone</th>
+
+                    <th>Details</th>
+
+                </tr>
+
+                <tr>
+
+                    <td><img src="..." alt="..." class="img-circle"></td>
+
+                    <td>Muhammad Iftikhar</td>
+
+                    <td>01/01/2019</td>
+
+                    <td>+923121654987</td>
+
+                    <td>
+                        <button class="btn btn-default" type="button" aria-haspopup="true" aria-expanded="true">
+
+                            View Card
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td><img src="..." alt="..." class="img-circle"></td>
+
+                    <td>Ifrah Shah</td>
+
+                    <td>05/12/2019</td>
+
+                    <td>+923142654287</td>
+
+                    <td>
+                        <button class="btn btn-default" type="button" aria-haspopup="true" aria-expanded="true">
+
+                            View Card
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </table>*@
+
+        <table class="table">
+            <tr>
+                @*<th>
+            @Html.DisplayNameFor(model => model.photo)
+        </th>
+
+        <th>
+            Name
+            @Html.DisplayNameFor(model => model.memberName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mobileNumber)
+        </th>*@
+                <th>Photo</th>
+
+                <th>Name</th>
+
+                <th>Phone</th>
+
+                <th>Details</th>
+
+            </tr>
+
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.photo)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.memberName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.mobileNumber)
+                </td>
+                <td>
+                    <button class="btn btn-default" type="button" aria-haspopup="true" aria-expanded="true">
+
+                        @Html.ActionLink("View Card", "Details", new { id = item.Id }) 
+
+                    </button>
+
+                </td>
+                @*<td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        </td>*@
+            </tr>
+            }
+
+        </table>
+
+
+    </div>
+
+</div>
